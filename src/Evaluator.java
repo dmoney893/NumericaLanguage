@@ -101,7 +101,7 @@ public class Evaluator {
 
     private void executePaste(PasteStatement statement) {
         Object value = evaluateExpression(statement.expression);
-        System.out.println(formatValue(value));
+        GUIOutput.print(formatValue(value));
     }
 
     private void executeWhen(WhenStatement statement) {
