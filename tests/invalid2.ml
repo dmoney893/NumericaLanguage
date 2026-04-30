@@ -1,2 +1,2 @@
 x = 3 + ;
-print x;
+paste x;

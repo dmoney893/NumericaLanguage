@@ -7,6 +7,6 @@ public class IntegerLiteral extends Expression {
 
     @Override
     public String toString() {
-        return "IntegerLiteral(" + value + ")\n";
+        return TreePrinter.line("IntegerLiteral(" + value + ")");
     }
 }

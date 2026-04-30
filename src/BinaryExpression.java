@@ -11,8 +11,8 @@ public class BinaryExpression extends Expression {
 
     @Override
     public String toString() {
-        return "BinaryExpression(" + operator.lexeme + ")\n" +
-                left.toString().indent(4) +
-                right.toString().indent(4);
+        return TreePrinter.line("BinaryExpression(" + operator.lexeme + ")") +
+                TreePrinter.indent(left.toString(), 4) +
+                TreePrinter.indent(right.toString(), 4);
     }
 }

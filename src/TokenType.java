@@ -1,14 +1,50 @@
 public enum TokenType {
     INTEGER,
+    FLOAT,
     IDENTIFIER,
+
     PLUS,
     MINUS,
     STAR,
     SLASH,
+
     EQUAL,
+    EQUAL_EQUAL,
+    BANG_EQUAL,
+
+    GREATER,
+    GREATER_EQUAL,
+    LESS,
+    LESS_EQUAL,
+
     SEMICOLON,
+    COMMA,
     LPAREN,
     RPAREN,
-    PRINT,
+    LBRACE,
+    RBRACE,
+    LBRACKET,
+    RBRACKET,
+
+    PASTE,
+    LET,
+    VAR,
+    WHEN,
+    OTHERWISE,
+    REPEAT,
+    RANGE,
+    FROM,
+    TO,
+    BY,
+    STOP,
+    TRUE,
+    FALSE,
+    AND,
+    OR,
+    NOT,
+    FN,
+    GIVE,
+    NONE,
+
     EOF
 }

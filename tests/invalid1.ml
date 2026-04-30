@@ -1,2 +1,2 @@
 x = 5
-print x;
+paste x;

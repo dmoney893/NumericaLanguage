@@ -1,1 +1,1 @@
-print 10;
+paste 10;
