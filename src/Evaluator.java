@@ -67,7 +67,15 @@ public class Evaluator {
     private void executeAssignment(AssignmentStatement statement) {
         Object value = evaluateExpression(statement.expression);
         String category = valueCategory(value);
-        environment.assign(statement.identifier.name, value, category);
+        try {
+            environment.assign(statement.identifier.name, value, category);
+        } catch (RuntimeException e) {
+            if (e.getMessage().contains("not defined")) {
+                environment.declare(statement.identifier.name, value, true, category);
+            } else {
+                throw e;
+            }
+        }
     }
 
     @SuppressWarnings("unchecked")
